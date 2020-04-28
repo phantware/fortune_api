@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "message": "Love is around the corner",
+    "lucky_number": 12,
+    "spirit_animal": "Dog"
+  },
+  {
+    "id": 2,
+    "message": "You will find a greate treasure",
+    "lucky_number": 15,
+    "spirit_animal": "Lion"
+  },
+  {
+    "id": 3,
+    "message": "One person will give you greate advice ",
+    "lucky_number": 30,
+    "spirit_animal": "Bear"
+  },
+  {
+    "id": 4,
+    "message": "The sppirit of becoming a great programmer is constant coding ",
+    "lucky_number": 10,
+    "spirit_animal": "Code Bobo"
+  },
+  {
+    "id": 3,
+    "message": " Following tutorials without trying it yourself will not make you a great programmer ",
+    "lucky_number": 40,
+    "spirit_animal": "100 days of coding"
+  }
+]
