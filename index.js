@@ -1,13 +1,12 @@
-const http = require("http");
+const express = require("express");
 
-const hostname = "localhost";
-
+const app = express();
+const fortunes = require("./data/fortunes.json");
 const port = 8089;
 
-const server = http.createServer((req, res) => {
-  res.end("Welcome to my app");
+app.get("/fortunes", (req, res) => {
+  res.status(200).send(fortunes);
 });
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at ${hostname}: ${port}`);
+app.listen(port, () => {
+  console.log(`App listening at ${port}....`);
 });
