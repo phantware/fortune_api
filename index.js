@@ -5,7 +5,11 @@ const fs = require("fs");
 
 const port = 8089;
 app.use(express.json());
-
+const writeFile = (json) => {
+  fs.writeFile("./data/fortunes.json", JSON.stringify(json, null, 2), (error) =>
+    console.log(error)
+  );
+};
 app.get("/fortunes", (req, res) => {
   res.status(200).send(fortunes);
 });
@@ -29,12 +33,18 @@ app.post("/fortunes", (req, res) => {
     spirit_animal,
   };
   const newFortunes = fortunes.concat(fortune);
-  fs.writeFile(
-    "./data/fortunes.json",
-    JSON.stringify(newFortunes, null, 2),
-    (error) => console.log(error)
-  );
+  writeFile(newFortunes);
   res.send(newFortunes);
+});
+
+app.put("/fortunes/:id", (req, res) => {
+  const { id } = req.params;
+  const old_fortune = fortunes.find((f) => f.id == id);
+  ["message", "lucky_number", "spirit_animal"].forEach((key) => {
+    if (req.body[key]) old_fortune[key] = req.body[key];
+  });
+  writeFile(fortunes);
+  res.send(fortunes);
 });
 
 app.listen(port, () => {
