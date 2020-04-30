@@ -24,9 +24,45 @@
     "spirit_animal": "Code Bobo"
   },
   {
-    "id": 3,
+    "id": 5,
     "message": " Following tutorials without trying it yourself will not make you a great programmer ",
     "lucky_number": 40,
     "spirit_animal": "100 days of coding"
+  },
+  {
+    "id": 6,
+    "message": "testing curl power",
+    "lucky_number": 50,
+    "spirit_animal": "curl can replace postman"
+  },
+  {
+    "id": 7,
+    "message": "testing curl power",
+    "lucky_number": 50,
+    "spirit_animal": "curl can replace postman"
+  },
+  {
+    "id": 8,
+    "message": "testing curl power",
+    "lucky_number": 50,
+    "spirit_animal": "curl can replace postman"
+  },
+  {
+    "id": 9,
+    "message": "testing curl power",
+    "lucky_number": 50,
+    "spirit_animal": "curl can replace postman"
+  },
+  {
+    "id": 10,
+    "message": "testing curl power",
+    "lucky_number": 50,
+    "spirit_animal": "curl can replace postman"
+  },
+  {
+    "id": 11,
+    "message": "testing curl power",
+    "lucky_number": 50,
+    "spirit_animal": "curl can replace postman"
   }
 ]
