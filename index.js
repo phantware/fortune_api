@@ -47,6 +47,13 @@ app.put("/fortunes/:id", (req, res) => {
   res.send(fortunes);
 });
 
+app.delete("/fortunes/:id", (req, res) => {
+  const { id } = req.params;
+  const remove_fortunes = fortunes.filter((f) => f.id != id);
+  writeFile(remove_fortunes);
+  res.send(remove_fortunes);
+});
+
 app.listen(port, () => {
   console.log(`App listening at ${port}....`);
 });
